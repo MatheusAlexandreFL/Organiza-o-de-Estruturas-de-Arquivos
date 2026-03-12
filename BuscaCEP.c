@@ -11,7 +11,7 @@ struct _Endereco
 	char uf[72];
 	char sigla[2];
 	char cep[8];
-	char lixo[2]; // Ao Espaço no final da linha + quebra de linha
+	char lixo[2]; 
 };
 
 int main(int argc, char**argv)
@@ -59,9 +59,9 @@ int main(int argc, char**argv)
             fclose(f);
             return 0;
         } else if (comparacao < 0) {
-            fim = meio - 1; // O alvo está na metade esquerda
+            fim = meio - 1;
         } else {
-            inicio = meio + 1; // O alvo está na metade direita
+            inicio = meio + 1; 
         }
     }
 
